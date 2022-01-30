@@ -1,2 +1,0 @@
-include ':app', ':openvpn'
-rootProject.name='OpenVPNExample'
