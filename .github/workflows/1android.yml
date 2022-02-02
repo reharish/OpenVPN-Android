@@ -8,9 +8,7 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: set up JDK 8
@@ -19,8 +17,7 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
         cache: gradle
-
-    - name: Grant execute permission for gradlew
+    - name: Gradlew Setup
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew bundleDebug
